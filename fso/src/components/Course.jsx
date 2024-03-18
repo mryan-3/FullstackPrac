@@ -1,7 +1,12 @@
+import Content from "./Content"
+import Header from "./Header"
+import Part from "./Part"
+
 const Course = ({ course }) => {
   return (
     <div>
-      <h1>{course.name}</h1>
+      <Header name={course.name}/>
+      <Content parts={course.parts}  />
     </div>
   )
 }
